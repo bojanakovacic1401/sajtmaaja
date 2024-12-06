@@ -9,12 +9,6 @@ body {
 }
 
 
-.naslov {
-    font-family: 'Franxurter', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 2cm;
-}
-
 @font-face {
     font-family: 'Franxurter';
     src: url('Franxurter.woff2') format('woff2'),
@@ -159,16 +153,10 @@ body {
         height: 250px;
     }
 
-    h1 {
-        font-size: 18px;
-    }
 }
 
 /* Very small devices (phones) */
 @media (max-width: 480px) {
-    h1 {
-        font-size: 16px;
-    }
 
     .calendar-table th,
     .calendar-table td {
