@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="izgled.css">
     <script src="sajt.js" defer></script>
-    <!--kalendar-->
-    <!--mapa-->
+    <!-- Leaflet for map -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-
     <title>Maja</title>
 </head>
 <body>
-    
     <div class="container">
         <!-- Calendar Section -->
         <div class="calendar-container">
@@ -50,22 +47,19 @@
                 <button id="deleteNote">Delete Note</button>
                 <div id="savedNote"></div>
                 <button id="prevMonth">Previous Month</button>
-<button id="nextMonth">Next Month</button>
-
+                <button id="nextMonth">Next Month</button>
             </div>
         </div>
-        
+
         <!-- Map Section -->
         <div id="map"></div>
     </div>
-    
+
     <div class="container">
         <div class="sticky-note">
             <textarea id="note-content" placeholder="Write your note here..."></textarea>
         </div>
         <h1>FROM ME FOR YOU.. <3</h1>
     </div>
-    
-
 </body>
 </html>
