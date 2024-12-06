@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="izgled.css">
+    <script src="sajt.js" defer></script>
+    <!--kalendar-->
+    <!--mapa-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <title>Maja</title>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Calendar Section -->
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <button id="prevYear">Prev Year</button>
+                <h2 id="monthYear">December 2024</h2>
+                <button id="nextYear">Next Year</button>
+            </div>
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Su</th>
+                        <th>Mo</th>
+                        <th>Tu</th>
+                        <th>We</th>
+                        <th>Th</th>
+                        <th>Fr</th>
+                        <th>Sa</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody">
+                    <!-- Days will be generated dynamically -->
+                </tbody>
+            </table>
+            <div class="calendar-footer">
+                <!-- Removed Today button as requested -->
+            </div>
+            <div class="notes-section">
+                <h3>Notes</h3>
+                <textarea id="noteInput" placeholder="Write a note..."></textarea>
+                <button id="saveNote">Save Note</button>
+                <button id="deleteNote">Delete Note</button>
+                <div id="savedNote"></div>
+                <button id="prevMonth">Previous Month</button>
+<button id="nextMonth">Next Month</button>
+
+            </div>
+        </div>
+        
+        <!-- Map Section -->
+        <div id="map"></div>
+    </div>
+    
+    <div class="container">
+        <div class="sticky-note">
+            <textarea id="note-content" placeholder="Write your note here..."></textarea>
+        </div>
+        <h1>FROM ME FOR YOU.. <3</h1>
+    </div>
+    
+
+</body>
+</html>

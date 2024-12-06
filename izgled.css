@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffe090;
+    font-family: 'Franxurter', Arial, sans-serif;
+    background-image: url('pomp.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.naslov {
+    font-family: 'Franxurter', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2cm;
+}
+
+@font-face {
+    font-family: 'Franxurter';
+    src: url('Franxurter.woff2') format('woff2'),
+         url('Franxurter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Flexbox container for calendar and map */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; /* Razmak od 20px između kalendara i mape */
+    padding: 20px;
+}
+
+/* Calendar */
+.calendar-container {
+    width: 350px;
+    background: #582424;
+    color: azure;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th, .calendar-table td {
+    width: 14.2%;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.notes-section {
+    margin-top: 15px;
+    color: white;
+}
+
+.notes-section textarea {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.notes-section button {
+    margin-right: 5px;
+}
+
+#savedNote {
+    margin-top: 10px;
+    font-style: italic;
+    color: #000000;
+}
+
+.selected-date {
+    background-color: #3b525a;
+    border-radius: 50%;
+}
+
+.noted-date {
+    background-color: #f0e68c;
+}
+
+.date-cell {
+    cursor: pointer;
+    text-align: center;
+}
+
+.current-date {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+/* Map */
+#map {
+    margin-top: 40px;
+    width: 500px; /* Širina mape */
+    height: 512px; /* Visina mape */
+    border-radius: 10px;
+    background-color: #ccc; /* Pozadina mape, možeš je promeniti */
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Poravnava sadržaj vertikalno u centru */
+    gap: 20px; /* Razmak između sticky note i h1 */
+}
+
+.sticky-note textarea {
+    width: 380px; /* Širina tekstualnog polja */
+    height: 200px; /* Visina tekstualnog polja */
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 50px; /* Podesi veličinu teksta po želji */
+    margin-left: 15px;
+    margin-bottom: -60px;
+}
+
+
