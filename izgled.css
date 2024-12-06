@@ -138,4 +138,56 @@ h1 {
     margin-bottom: -60px;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .calendar-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .calendar-header button {
+        margin-bottom: 5px;
+    }
+
+    .calendar-table {
+        font-size: 14px;
+    }
+
+    .notes-section textarea {
+        height: 80px;
+    }
+
+    .sticky-note textarea {
+        height: 120px;
+    }
+
+    #map {
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
+/* Very small devices (phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 16px;
+    }
+
+    .calendar-table th,
+    .calendar-table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .sticky-note textarea {
+        height: 100px;
+    }
+
+    .notes-section button {
+        padding: 5px 10px;
+    }
+}
 
